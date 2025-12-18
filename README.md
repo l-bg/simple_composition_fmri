@@ -1,22 +1,15 @@
-# Source code for "An fMRI study of composition in simple noun and verb phrases"
-
-(by Bonnasse-Gahot, Bemis, Perez-Guevara, Dehaene, Pallier, 2019).
+# Source code for [Bonnasse-Gahot, Bemis, Perez-Guevara, Dehaene, Pallier (2020). An fMRI study of composition in simple noun and verb phrases. (Preprint)](https://www.biorxiv.org/cgi/content/short/2025.12.17.694853v1)
 
 Participants were scanned with fMRI while they were presented with short visual sequences (1 to 4 words long)
 forming either meaningful grammatical phrases (e.g. `avec son beau clavier`
 (`with his nice keyboard`) or unstructured lists `Adam son plus clavier` (`Adam
 his more keyboard`)).
 
-
 ## Getting fMRI data
 
-fMRI data can be obtained at [openneuro.org](https://openneuro.org/datasets/ds002905)
+fMRI data can be obtained at openneuro.org.
 
-After downloading the data, move all subjects data and accompanying information in the BIDS format to the `rawdata` folder by running
-
-    python move-sub-to-rawdata.py
-
-The project is then organized with the following structure:
+The project is organized with the following structure:
 
 ```
 ├── code
@@ -62,7 +55,6 @@ You must obtain a [freesurfer licence](https://surfer.nmr.mgh.harvard.edu/regist
     fmriprep-docker --fs-no-reconall --fs-license-file=$FREESURFER_LICENCE -w /tmp $SIMPCOMP/rawdata $SIMPCOMP/derivatives participant
 
 ---
-
 
 ## Check the required Python modules
 
